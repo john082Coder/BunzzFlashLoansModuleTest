@@ -25,15 +25,6 @@ const Creator = () => {
     const [pendingFlashBorrowAndSteal, setPendingFlashBorrowAndSteal] = useState(false);
     const [pendingFlashBorrowAndReenter, setPendingFlashBorrowAndReenter] = useState(false);
 
-
-    
- 
-  
-   
-   
-    
-
-
     return (
         <Container>
             <Row className="justify-content-center mt-5">

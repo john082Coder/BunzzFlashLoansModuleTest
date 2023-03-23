@@ -9,7 +9,7 @@ import {
 
 import Erc20Abi from './abi/erc20.json';
 
-import UniswapV2FactoryAbi from './abi/uniswapV2Factory.json'
+
 import FlashLenderAbi from './abi/flashLender.json'
 import FlashBorrowerAbi from './abi/flashBorrower.json'
 import FlashMinterAbi from './abi/flashMinter.json'
@@ -26,7 +26,7 @@ export class Contracts {
  
     this.erc20 = new this.web3.eth.Contract(Erc20Abi);
 
-    this.uniswapV2Factory = new this.web3.eth.Contract(UniswapV2FactoryAbi);
+   
     this.flashLender = new this.web3.eth.Contract(FlashLenderAbi);
     this.flashBorrower = new this.web3.eth.Contract(FlashBorrowerAbi);
     this.flashMinter = new this.web3.eth.Contract(FlashMinterAbi);
@@ -45,7 +45,7 @@ export class Contracts {
     }
 
   
-    setProvider(this.uniswapV2Factory, contractAddresses.uniswapV2Factory[networkId]);
+    
     setProvider(this.flashLender, contractAddresses.flashLender[networkId]);
     setProvider(this.flashBorrower, contractAddresses.flashBorrower[networkId]);
     setProvider(this.flashMinter, contractAddresses.flashMinter[networkId]);
