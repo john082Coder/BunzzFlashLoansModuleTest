@@ -1,2 +1,2 @@
-pair, createPair, GetPair, feeTo
+flashLoan, flashFee, flashBorrow
 
