@@ -4,10 +4,7 @@ export const contractAddresses = {
  
  
  
-  uniswapV2Factory: {
-    56: "0x06F8AAb789da01048aeE037AFe60FB44b70A2f0f",
-    97: "0x06F8AAb789da01048aeE037AFe60FB44b70A2f0f"
-  },
+ 
 
   flashLender: {
     56: "0x6936802F5f08618f68B3A4B3Aa4eF0DE028A9bA7",
@@ -20,8 +17,13 @@ export const contractAddresses = {
   },
 
   flashMinter: {
-    56: "0x036Fc56b759fB01742DBcd275a10606990D94eD5",
-    97: "0x036Fc56b759fB01742DBcd275a10606990D94eD5"
+    56: "0x4916eFa74Ae475DEAf5958dE64d7934a4D18cc5D",
+    97: "0x4916eFa74Ae475DEAf5958dE64d7934a4D18cc5D"
+  },
+
+  flashBorrower2: {
+    56: "0x898131442740a764071a035c5e5fC4f8C57061c2",
+    97: "0x898131442740a764071a035c5e5fC4f8C57061c2"
   },
 
   

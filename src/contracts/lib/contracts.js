@@ -30,6 +30,7 @@ export class Contracts {
     this.flashLender = new this.web3.eth.Contract(FlashLenderAbi);
     this.flashBorrower = new this.web3.eth.Contract(FlashBorrowerAbi);
     this.flashMinter = new this.web3.eth.Contract(FlashMinterAbi);
+    this.flashBorrower2 = new this.web3.eth.Contract(FlashBorrowerAbi);
 
 
 
@@ -48,6 +49,7 @@ export class Contracts {
     
     setProvider(this.flashLender, contractAddresses.flashLender[networkId]);
     setProvider(this.flashBorrower, contractAddresses.flashBorrower[networkId]);
+    setProvider(this.flashBorrower2, contractAddresses.flashBorrower2[networkId]);
     setProvider(this.flashMinter, contractAddresses.flashMinter[networkId]);
 
    

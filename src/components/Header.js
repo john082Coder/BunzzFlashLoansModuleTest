@@ -30,7 +30,12 @@ const Header = () => {
                 <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="me-auto gap-3">
                     <Nav.Item>
-                        <Link to="/" className={location.pathname === "/" ? `nav-link active` : 'nav-link'}></Link>
+                        <Link to="/lender" className={location.pathname === "/" ? `nav-link active` : 'nav-link'}>Lender</Link>
+                        
+                    </Nav.Item>
+                    <Nav.Item>
+                        <Link to="/minter" className={location.pathname === "/" ? `nav-link active` : 'nav-link'}>Minter</Link>
+                        
                     </Nav.Item>
                     
                 </Nav>

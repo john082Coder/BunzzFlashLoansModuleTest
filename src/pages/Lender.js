@@ -7,7 +7,7 @@ import { getFlashLenderContract, getFlashBorrowerContract, getFlashMinterContrac
 import { useWeb3React } from "@web3-react/core";
 
 import { bnToDec, isAddress } from "../utils";
-const Creator = () => {
+const Lender = () => {
     const bunzz = useBunzz();
     const { account} = useWeb3React();
     
@@ -29,6 +29,7 @@ const Creator = () => {
         <Container>
             <Row className="justify-content-center mt-5">
                 <Col lg="4" md="4" xs="12">
+                    Flash Lend
                     <Form>
                         <Form.Group className="mb-3" controlId="formBasicEmail">
                             <Form.Label>Input Token Address</Form.Label>
@@ -131,7 +132,7 @@ const Creator = () => {
                                 FlashBorrow And Reenter
                             </Button>
                             :
-                            <Button className="mx-3 " variant="dark">
+                            <Button className="mx-3 mt-2" variant="dark">
                                  <Spinner
                                     as="span"
                                     animation="border"
@@ -166,7 +167,7 @@ const Creator = () => {
                                 FlashBorrow And Steal
                             </Button>
                             :
-                            <Button className="mx-3 " variant="dark">
+                            <Button className="mx-3 mt-2" variant="dark">
                                  <Spinner
                                     as="span"
                                     animation="border"
@@ -187,4 +188,4 @@ const Creator = () => {
     )
 }
 
-export default Creator;
+export default Lender;

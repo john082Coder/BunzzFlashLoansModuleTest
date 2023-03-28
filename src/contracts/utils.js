@@ -31,6 +31,9 @@ export const getFlashLenderContract = (bunzz) => {
 export const getFlashBorrowerContract = (bunzz) => {
   return bunzz && bunzz.contracts && bunzz.contracts.flashBorrower;
 }
+export const getFlashBorrower2Contract = (bunzz) => {
+  return bunzz && bunzz.contracts && bunzz.contracts.flashBorrower2;
+}
 
 export const getFlashMinterContract = (bunzz) => {
   return bunzz && bunzz.contracts && bunzz.contracts.flashMinter;
